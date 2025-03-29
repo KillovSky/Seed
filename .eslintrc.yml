@@ -1,0 +1,28 @@
+env:
+  commonjs: true
+  es2021: true
+  node: true
+extends: airbnb-base
+parserOptions:
+  ecmaVersion: latest
+rules:
+  import/no-extraneous-dependencies: 0
+  import/no-unresolved: 0
+  no-inner-declarations: 0
+  indent:
+    - error
+    - 4
+  no-console: 0
+globals:
+  config: true
+  APIs: true
+  kill: true
+  internalSocket: true
+  os: true
+  tasksComplete: true
+  region: true
+  startedTime: true
+  irisNumber: true
+  messagesCount: true
+  irisPath: true
+  logging: true

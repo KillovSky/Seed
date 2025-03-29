@@ -1,0 +1,318 @@
+{
+    "Default": {
+        "place": "./Functions/Default",
+        "alias": [
+            "default",
+            "metrics",
+            "convert",
+            "calculate"
+        ]
+    },
+    "Antilinks": {
+        "place": "./Functions/Verifiers/Antilinks/index",
+        "alias": [
+            "nourl",
+            "checkurl",
+            "antilink",
+            "nolink",
+            "antiurl"
+        ]
+    },
+    "Arrays": {
+        "place": "./Functions/Arrays/index",
+        "alias": [
+            "arrays",
+            "array"
+        ]
+    },
+    "Cases": {
+        "place": "./Commands/Main/index",
+        "alias": [
+            "commands",
+            "case",
+            "cases",
+            "prefix",
+            "noprefix"
+        ]
+    },
+    "CMDs": {
+        "place": "./Functions/Works/CMDs/index",
+        "alias": [
+            "cmds",
+            "comandos"
+        ]
+    },
+    "Clear": {
+        "place": "./Functions/Clear/index",
+        "alias": [
+            "destroy",
+            "expurge",
+            "clear",
+            "remove",
+            "clean"
+        ]
+    },
+    "Construct": {
+        "place": "./Commands/Main/Construct/index",
+        "alias": [
+            "construct",
+            "message",
+            "parsing",
+            "collect"
+        ]
+    },
+    "Colors": {
+        "place": "./Functions/Colors/index",
+        "alias": [
+            "hex",
+            "rgb",
+            "color",
+            "colors",
+            "palette"
+        ]
+    },
+    "Events": {
+        "place": "./Commands/Main/Events/index",
+        "alias": [
+            "events",
+            "evento"
+        ]
+    },
+    "Images": {
+        "place": "./Functions/Pictures/Images/index",
+        "alias": [
+            "imageget",
+            "search",
+            "images",
+            "glens"
+        ]
+    },
+    "Join": {
+        "place":  "./Functions/Plugins/onJoinRequest/index",
+        "alias": [
+            "join",
+            "approval",
+            "onjoinrequest"
+        ]
+    },
+    "Numbers": {
+        "place": "./Functions/Numbers/index",
+        "alias": [
+            "numbers",
+            "number",
+            "numeros",
+            "numero",
+            "nb"
+        ]
+    },
+    "onError": {
+        "place": "./Functions/Plugins/onError/index",
+        "alias": [
+            "error",
+            "onerror",
+            "fail",
+            "aterror",
+            "failed"
+        ]
+    },
+    "onParticipantsChanged": {
+        "place": "./Functions/Plugins/onParticipantsChanged/index",
+        "alias": [
+            "onparticipantschanged",
+            "welcome",
+            "goodbye",
+            "ddi",
+            "welcome",
+            "bemvindo",
+            "bienvenido",
+            "novomembro",
+            "country",
+            "blacklist",
+            "blacklisted",
+            "noentrance",
+            "blockenter",
+            "fake",
+            "abayo",
+            "goodbye",
+            "adeus",
+            "sayonara",
+            "antifake",
+            "blacklist",
+            "greetings",
+            "newmember"
+        ]
+    },
+    "onStateChanged": {
+        "place": "./Functions/Plugins/onStateChanged/index",
+        "alias": [
+            "states",
+            "state",
+            "onstatechanged"
+        ]
+    },
+    "Options": {
+        "place": "./Functions/Options/index",
+        "alias": [
+            "session",
+            "waautomate",
+            "start",
+            "options"
+        ]
+    },
+    "Others": {
+        "place": "./Functions/Others/index",
+        "alias": [
+            "others",
+            "outros",
+            "other",
+            "another"
+        ]
+    },
+    "Owner": {
+        "place": "./Functions/Works/Owner/index",
+        "alias": [
+            "owner",
+            "dono",
+            "jids",
+            "fixer"
+        ]
+    },
+    "Profile": {
+        "place": "./Functions/Profile/index",
+        "alias": [
+            "profile",
+            "perfil",
+            "picture"
+        ]
+    },
+    "RegExp": {
+        "place": "./Functions/RegExp/index",
+        "alias": [
+            "regexp",
+            "match",
+            "expr",
+            "regex"
+        ]
+    },
+    "Terminal": {
+        "place": "./Functions/Works/Terminal/index",
+        "alias": [
+            "terminal",
+            "ubuntu",
+            "webterm",
+            "express"
+        ]
+    },
+    "Transmission": {
+        "place": "./Functions/Works/Transmission/index",
+        "alias": [
+            "ota",
+            "transmission",
+            "killovsky",
+            "pastebin",
+            "notices"
+        ]
+    },
+    "Tree": {
+        "place": "./Functions/Tree/index",
+        "alias": [
+            "tree",
+            "folders",
+            "list",
+            "files"
+        ]
+    },
+    "Recents": {
+        "place": "./Functions/Recents/index",
+        "alias": [
+            "recent",
+            "recents",
+            "recentes",
+            "classify"
+        ]
+    },
+    "Reload": {
+        "place": "./Functions/Reload/index",
+        "alias": [
+            "reload",
+            "module",
+            "unrequire"
+        ]
+    },
+    "Shell": {
+        "place": "./Functions/Shell/index",
+        "alias": [
+            "bash",
+            "childprocess",
+            "child",
+            "shell",
+            "exec"
+        ]
+    },
+    "Spam": {
+        "place": "./Functions/Verifiers/Spam/index",
+        "alias": [
+            "spam",
+            "spammers",
+            "antispam",
+            "flood",
+            "antiflood"
+        ]
+    },
+    "Strings": {
+        "place": "./Functions/Strings/index",
+        "alias": [
+            "strings",
+            "string",
+            "str"
+        ]
+    },
+    "Starting": {
+        "place": "./Functions/Works/Starting/index",
+        "alias": [
+            "safeboot",
+            "booting",
+            "starting"
+        ]
+    },
+    "Status": {
+        "place": "./Functions/Works/Status/index",
+        "alias": [
+            "status",
+            "recado"
+        ]
+    },
+    "SQL": {
+        "place": "./Functions/SQL/index",
+        "alias": [
+            "sql",
+            "sequelize",
+            "database"
+        ]
+    },
+    "Update": {
+        "place": "./Functions/Works/Update/index",
+        "alias": [
+            "update",
+            "github",
+            "package"
+        ]
+    },
+    "Verifier": {
+        "place": "./Functions/Verifiers/index",
+        "alias": [
+            "verifier",
+            "verifiers",
+            "precheck",
+            "preprocessing"
+        ]
+    },
+    "ZIP": {
+        "place": "./Functions/Works/ZIP/index",
+        "alias": [
+            "backup",
+            "clear",
+            "zip"
+        ]
+    }
+}

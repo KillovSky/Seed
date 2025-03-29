@@ -1,0 +1,8 @@
+{
+	"moderatorCommands": [
+		"Insira aqui os comandos que um moderador deve poder usar!"
+	],
+	"vipCommands": [
+		"Insira aqui os comandos que um VIP deve poder usar!"
+	]
+}

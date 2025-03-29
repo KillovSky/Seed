@@ -1,0 +1,318 @@
+{
+    "name": "another",
+    "description": "Executar qualquer tipo de função que não possua arquivo próprio.",
+    "usage": {
+        "general": "[RESTRITO] - Verifique o 'examples' para usos inseguros.",
+        "examples": [
+            "another.env()",
+            "another.list('chatIDs')",
+            "another.sleep('milisseconds')",
+            "another.buffer('midia url')",
+            "another.date('timestamp')",
+            "another.reset()",
+            "another.env.functions.list.value('chatIDs')",
+            "another.env.functions.sleep.value('milisseconds')",
+            "another.env.functions.buffer.value('midia url')",
+            "another.env.functions.date.value('timestamp')",
+            "another.env().functions.revert.value()"
+        ]
+    },
+    "license": "MIT",
+    "helps": [
+        "Você pode mudar os parâmetros da exports enviando o valor da Object que deseja editar ao resetar, por exemplo → another.reset({ name: 'Body'}) ← Isso mudaria o module de Tree para Body, o uso então passaria ser: → Body.funcão ← Isso também permite que você edita a função usando o mesmo método.",
+        "Você pode mudar o que os códigos rodam, em tempo real, basta usar a 'env', por exemplo → another.env().name = 'Body' ← Mas este método não atualizará o sistema, somente a Object, os sistemas permanecem intactos.",
+        "Você pode configurar o tempo de reset dos resultados ou se eles devem ser resetados usando a env, por exemplo → another.env().settings.wait = 10000 ← Isso mudaria o tempo de espera para 10 segundos, o tempo deve ser em milissegundos.",
+        "Alguém lê essas dicas? Se sim, torne-se um programador, ler os tutoriais é de suma importância e poucos desenvolvedores o fazem...",
+        "Existem infinitas formas de uso secretas, explore os códigos para descobrir os mistérios dos sistemas!",
+        "Todas as funções tem valores padrão, então você não sofrerá erros por esquecer de enviar um parâmetro ou similar."
+    ],
+    "exports": {
+        "env": "env",
+        "messedup": "messedup",
+        "list": "list",
+        "sleep": "sleep",
+        "buffer": "buffer",
+        "patent": "patent",
+        "date": "date",
+        "urlexists": "urlexists",
+        "farpc": "farpc",
+        "findkey": "findkey",
+        "repl": "repl",
+        "reset": "reset",
+        "poswork": "finish"
+    },
+    "developer": "KillovSky",
+    "files": {
+        "index.js": "Sistema que contém diversas funções de tipo variado que são pequenas demais para ter arquivo próprio.",
+        "utils.json": "Dados de fábrica da envInfo."
+    },
+    "modules": {
+        "fs": "Leitura de diretórios e arquivos.",
+        "axios": "Para acessar uma mídia que esteja em URL.",
+        "path": "Para obter o nome da pasta.",
+        "../../index": "Para executar funções de outros locais."
+    },
+    "functions": {
+        "ambient": {
+            "arguments": false,
+            "description": "Retorna as variáveis e sistemas do arquivo.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "messedup": {
+            "arguments": {
+                "error": {
+                    "description": "Instância de erro para formatação.",
+                    "type": "Boolean / Error",
+                    "value": false
+                }
+            },
+            "description": "Ajusta os valores de erro.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "date": {
+            "arguments": {
+                "timestamp": {
+                    "description": "Data em formato UNIX para checagem.",
+                    "type": "Boolean / Error",
+                    "value": false
+                }
+            },
+            "description": "Verifica e retorna se uma string ou número é uma data.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "buffer": {
+            "arguments": {
+                "imageURL": {
+                    "description": "Link para request, em Buffer, de uma mídia.",
+                    "type": "String",
+                    "value": false
+                }
+            },
+            "description": "Adquire uma mídia de URL e converte em Buffer.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "urlexists": {
+            "arguments": {
+                "url": {
+                    "description": "A URL que deve verificar.",
+                    "type": "Boolean / String",
+                    "value": false
+                }
+            },
+            "description": "Verifica se a URL existe.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "patent": {
+            "arguments": {
+                "level": {
+                    "description": "O nível do usuário em relação as patentes do sistema.",
+                    "type": "Number",
+                    "value": 9999
+                },
+                "patents": {
+                    "description": "O nível do usuário em relação as patentes do sistema.",
+                    "type": "Object",
+                    "value": {
+                        "0": "None",
+                        "1000": "God"
+                    }
+                }
+            },
+            "description": "Adquire a patente de um usuário.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "findkey": {
+            "arguments": {
+                "myObject": {
+                    "description": "Object de variaveis de dados.",
+                    "type": "Boolean / Object",
+                    "value": false
+                },
+                "findKey": {
+                    "description": "Array com nome das keys para encontrar.",
+                    "type": "Boolean / Array",
+                    "value": false
+                },
+                "typeKey": {
+                    "description": "Array com os tipos de valor que a key deve possuir.",
+                    "type": "Boolean / Array",
+                    "value": false
+                },
+                "ignoreKeys": {
+                    "description": "Array com os nomes de keys que deve ignorar na busca.",
+                    "type": "Boolean / Array",
+                    "value": false
+                }
+            },
+            "description": "Localiza um valor de object pela sua key.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "farpc": {
+            "arguments": {
+                "myObject": {
+                    "description": "Object de variaveis de dados.",
+                    "type": "Boolean / Object",
+                    "value": false
+                },
+                "findText": {
+                    "description": "String para encontrar.",
+                    "type": "String",
+                    "value": ""
+                },
+                "newText": {
+                    "description": "Valor para inserir na troca.",
+                    "type": "String",
+                    "value": ""
+                }
+            },
+            "description": "Substitui um texto em todas as keys especificadas de uma object.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "repl": {
+            "arguments": {
+                "objt": {
+                    "description": "Object de variaveis de dados.",
+                    "type": "Boolean / Object",
+                    "value": false
+                },
+                "match": {
+                    "description": "String que foi encontrada.",
+                    "type": "Boolean / String",
+                    "value": false
+                },
+                "key": {
+                    "description": "Valor capturado em grouping.",
+                    "type": "Boolean / String",
+                    "value": false
+                }
+            },
+            "description": "Faz a conversão das 'variáveis' do JSON em código do NodeJS.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "sleep": {
+            "arguments": {
+                "miliseconds": {
+                    "description": "Quantidade de tempo em milissegundos que deve ser esperada.",
+                    "type": "Number",
+                    "value": 1000
+                }
+            },
+            "description": "Faz uma pausa assíncrona da execução de um código por 'x' tempo em milissegundos.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "list": {
+            "arguments": {
+                "chatIDs": {
+                    "description": "Dados dos grupos que existem atualmente.",
+                    "type": "Boolean / Array",
+                    "value": false
+                }
+            },
+            "description": "Gera uma lista em Object de forma crescente com ID's e nomes de grupo.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "poswork": {
+            "arguments": {
+                "response": {
+                    "description": "Resultados de uma função.",
+                    "type": "Any",
+                    "value": false
+                }
+            },
+            "description": "Verifica se pode resetar a envInfo e retorna o resultado da função.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "revert": {
+            "arguments": {
+                "changeKey": {
+                    "description": "Uma Object com valores que existem na envInfo, ela será usada para substituir o sistema em tempo real.",
+                    "type": "Object value",
+                    "anyValue": false
+                }
+            },
+            "description": "Reseta a envInfo para a Object padrão.",
+            "type": "Boolean / Function",
+            "value": false
+        }
+    },
+    "settings": {
+        "wait": {
+            "description": "Tempo em MS que deve esperar antes de resetar.",
+            "type": "Number",
+            "value": 5000
+        },
+        "error": {
+            "description": "Define se pode printar qualquer erro.",
+            "type": "Boolean",
+            "value": true
+        },
+        "ender": {
+            "description": "Define se deve resetar a cada erro.",
+            "type": "Boolean",
+            "value": true
+        },
+        "finish": {
+            "description": "Define se deve resetar a cada finalização.",
+            "type": "Boolean",
+            "value": true
+        }
+    },
+    "parameters": {
+        "buffer": {
+            "description": "Array padrão para casos de erro.",
+            "type": "Buffer Object",
+            "value": {
+                "type": "Buffer",
+                "data": [
+                    71,
+                    73,
+                    70,
+                    56,
+                    57,
+                    97,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    44
+                ]
+            }
+        },
+        "location": {
+            "description": "Local onde o módulo pode ser encontrado.",
+            "type": "Boolean / String",
+            "value": "./index"
+        },
+        "code": {
+            "description": "Código do erro que obter.",
+            "type": "Boolean / String / Number",
+            "value": false
+        },
+        "message": {
+            "description": "Armazena a mensagem do último erro recebido.",
+            "type": "Boolean / String",
+            "value": false
+        }
+    },
+    "results": {
+        "description": "Resultado final da função.",
+        "success": true,
+        "type": "Any",
+        "value": false
+    }
+}

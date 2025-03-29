@@ -1,0 +1,24 @@
+{
+    "IMPORTANT": "Você pode inserir várias chaves de API para aumentar o uso e evitar bloqueios por limites, mas, por favor, evite sobrecarregar os servidores com esse propósito. Lembre-se de que, por ser um projeto base, NÃO importa como você organiza aqui, já que VOCÊ está criando seus códigos e pode fazer como quiser. Isso é apenas um modelo para facilitar. A NASA é um exemplo pronto de como fazê-lo.",
+    "API_NAME": {
+        "API_FULL_NAME": "Insira o nome completo da API aqui, como: Google Cloud",
+        "API_WEBSITE": "Insira o site da API, como: https://exemplo.com/API",
+        "API_IS_PAID": "Informe se a API é gratuita ou paga, pode definir como Free, Paid, True, False, etc, não importa.",
+        "API_COMMENTS": "Insira observações sobre essa API, como algo que você deseja lembrar.",
+        "API_ACCESS_KEY": "Insira uma chave de acesso para esta API, se necessário, claro.",
+        "API_HOST_KEY": "Insira uma chave de host para esta API, se necessário, claro.",
+        "API_SECRET_KEY": "Insira uma chave secreta para esta API, se necessário, claro.",
+        "API_KEYS": [
+            "Insira neste array suas chaves de API. Você pode adicionar quantas quiser para evitar limites..."
+        ]
+    },
+    "nasa": {
+        "name": "National Aeronautics and Space Administration [NASA]",
+        "site": "https://api.nasa.gov",
+        "type": "Free",
+        "comment": "API é gratuita, você pode se registrar para obter mais acessos, mas se você não usar muito o comando da NASA, pode continuar com a chave gratuita abaixo.",
+        "key": [
+            "DEMO_KEY"
+        ]
+    }
+}

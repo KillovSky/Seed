@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Project Íris: Development Mode</title>
+    <meta name="description"
+        content="Nosso querido terminal web, ele consegue rodar qualquer coisa que você jogar nele.">
+    <meta name="keywords"
+        content="robot, bot, whatsapp, chatbot, languages, games, stickers, commands, otaku, gamer, adult, help, automate, javascript, html, shell, css, python, json, opensource, adapt, iris">
+    <meta name="author" content="KillovSky">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="terminal.js"></script>
+    <link rel="stylesheet" href="terminal.css">
+</head>
+<body onload='createSocket()'>
+    <div id="terminal">
+        <div class="titlebar">Project Íris - Development Mode</div>
+        <textarea id="output" placeholder='Waiting for response...' readonly></textarea>
+        <div id="inputcontainer">
+            <textarea id="input" placeholder="Admin@IrisBOT:~$ Type a command..."></textarea>
+        </div>
+        <button id="submitvalue">Enviar</button>
+    </div>
+</body>
+</html>

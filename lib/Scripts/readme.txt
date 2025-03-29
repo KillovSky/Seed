@@ -1,0 +1,1 @@
+Local onde se armazena script que rodem em outras programações via função Indexer('bash')

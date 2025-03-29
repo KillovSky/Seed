@@ -1,0 +1,8 @@
+{
+    "commands":{
+        "description": "Comandos especiais para códigos que vieram de plugins da Íris e que ignoram o erro padrão 'comando não encontrado'. Para mais detalhes, visite https://github.com/KillovSky e explore outros projetos relacionados a Íris.",
+        "value":[
+            "Insira aqui comandos que você fizer em outras programações com os plugins!"
+        ]
+    }
+}

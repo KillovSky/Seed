@@ -1,0 +1,1 @@
+**⚠️ Seed is not supported for this operation - but you can refer to [Project Íris Documentation](https://github.com/KillovSky/Iris/wiki).**

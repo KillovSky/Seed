@@ -1,0 +1,66 @@
+{
+  "name": "seed",
+  "version": "1.0.0",
+  "build_date": "28-03-2025",
+  "build_name": "initial",
+  "private": true,
+  "description": "Seed é uma base operacional que é, em palavras simples, uma versão reduzida e simples do Projeto Íris.",
+  "main": "lib/Initialize/checker.js",
+  "scripts": {
+    "start": "node lib/Initialize/checker.js",
+    "test": "npm run"
+  },
+  "author": "KillovSky",
+  "documentation": "https://github.com/KillovSky/Iris/wiki",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KillovSky/Seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KillovSky/Seed/issues"
+  },
+  "homepage": "https://KillovSky.github.io/Iris",
+  "social": {
+    "github": "https://github.com/KillovSky",
+    "npm": "https://npmjs.com/~killovsky",
+    "other": "https://linktr.ee/killovsky"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@killovsky/gimages": "^1.1.0",
+    "@killovsky/telegraph": "^1.0.0",
+    "@killovsky/tree": "^1.0.0",
+    "axios": "^1.5.0",
+    "baileys": "^6.7.4",
+    "better-sqlite3": "^11.8.1",
+    "body-parser": "^1.20.2",
+    "chokidar": "^3.5.3",
+    "command-exists": "^1.2.9",
+    "express": "^4.18.2",
+    "ip": "^2.0.0",
+    "link-preview-js": "^3.0.5",
+    "linkify-plugin-ip": "^4.1.3",
+    "linkifyjs": "^4.1.3",
+    "pino": "^8.12.1",
+    "pretty-num": "^0.5.2",
+    "qrcode-terminal": "^0.12.0",
+    "remove-accents": "^0.5.0",
+    "similarity": "^1.2.1",
+    "socket.io": "^4.7.2"
+  },
+  "funding": [
+    {
+      "type": "kofi",
+      "url": "http://ko-fi.com/killovsky"
+    },
+    {
+      "type": "others",
+      "url": "https://linktr.ee/killovsky"
+    }
+  ],
+  "devDependencies": {},
+  "directories": {
+    "lib": "lib"
+  }
+}

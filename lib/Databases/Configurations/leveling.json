@@ -1,0 +1,145 @@
+{
+    "Note": "O sistema de níveis está atualmente sem uso, mas decidi mantê-lo neste projeto base devido às funções SQL serem bastante específicas para a arquitetura de mensagens e o SQL depende de calculos com os números abaixo para os contadores de mensagens, além de servir de base para funções de jogos, caso queira fazer eles.",
+    "card": {
+        "description": "Determina se Íris deve enviar cartões de subida de nível sempre que alguém atingir um novo nível.",
+        "value": false
+    },
+    "materials": {
+        "description": "A base dos materiais ganhos por subida de nível, usada para calcular o valor ideal a ser fornecido.",
+        "value": {
+            "multiply": 1.2,
+            "attenuation": 2,
+            "wins": {
+                "coin": 3,
+                "diamond": 5,
+                "rubi": 6,
+                "gold": 8,
+                "iron": 10,
+                "stone": 12,
+                "wood": 13
+            }
+        }
+    },
+    "messageXP": {
+        "description": "A quantidade de XP obtida por mensagem, excluindo mensagens desativadas, como reações.",
+        "value": 45
+    },
+    "base": {
+        "description": "A XP base para subida de nível, aplicada para calcular o nível correto para cada usuário.",
+        "value": 1200
+    },
+    "multiplier": {
+        "description": "O multiplicador usado para calcular os requisitos para alcançar o próximo nível.",
+        "value": 1.75
+    },
+    "patentes": {
+        "pt": {
+            "0": "Talco",
+            "10": "Âmbar",
+            "20": "Prata",
+            "50": "Ouro",
+            "100": "Jade",
+            "200": "Topázio",
+            "500": "Rubi"
+        },
+        "jp": {
+            "0": "タルコ",
+            "10": "アンバー",
+            "20": "シルバー",
+            "50": "ゴールド",
+            "100": "ジェイド",
+            "200": "トパーズ",
+            "500": "ルビー"
+        },
+        "en": {
+            "0": "Talc",
+            "10": "Amber",
+            "20": "Silver",
+            "50": "Gold",
+            "100": "Jade",
+            "200": "Topaz",
+            "500": "Ruby"
+        },
+        "fr": {
+            "0": "Talc",
+            "10": "Ambre",
+            "20": "Argent",
+            "50": "Or",
+            "100": "Jade",
+            "200": "Topaz",
+            "500": "Rubis"
+        },
+        "es": {
+            "0": "Talco",
+            "10": "Ámbar",
+            "20": "Plata",
+            "50": "Oro",
+            "100": "Jade",
+            "200": "Topacio",
+            "500": "Rubí"
+        },
+        "id": {
+            "0": "Talc",
+            "10": "Amber",
+            "20": "Perak",
+            "50": "Emas",
+            "100": "Jade",
+            "200": "Topaz",
+            "500": "Ruby"
+        },
+        "ms": {
+            "0": "Talc",
+            "10": "Amber",
+            "20": "Perak",
+            "50": "Emas",
+            "100": "Jade",
+            "200": "Topaz",
+            "500": "Ruby"
+        },
+        "hi": {
+            "0": "तालक",
+            "10": "एम्बर",
+            "20": "चांदी",
+            "50": "सोना",
+            "100": "जेड",
+            "200": "टोपाज़",
+            "500": "रूबी"
+        },
+        "de": {
+            "0": "Talk",
+            "10": "Bernstein",
+            "20": "Silber",
+            "50": "Gold",
+            "100": "Jade",
+            "200": "Topaz",
+            "500": "Rubin"
+        },
+        "it": {
+            "0": "Talco",
+            "10": "Ambra",
+            "20": "Argento",
+            "50": "Oro",
+            "100": "Giada",
+            "200": "Topázio",
+            "500": "Rubino"
+        },
+        "ru": {
+            "0": "Тальк",
+            "10": "Янтарь",
+            "20": "Серебро",
+            "50": "Золото",
+            "100": "Нефрит",
+            "200": "Топаз",
+            "500": "Рубин"
+        },
+        "lat": {
+            "0": "Talcum",
+            "10": "Sucinum",
+            "20": "Argentum",
+            "50": "Aurum",
+            "100": "Jade",
+            "200": "Topázio",
+            "500": "Rubrum"
+        }
+    }
+}

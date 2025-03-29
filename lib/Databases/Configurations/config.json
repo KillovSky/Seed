@@ -1,0 +1,127 @@
+{
+    "allowEvents": {
+        "description": "Ativa a detecção de eventos, como promover, rebaixar ou eventos de jogos como MMM (Modo de Mineração do Minecraft).",
+        "value": true
+    },
+    "botCommands": {
+        "description": "Especifica se deve executar comandos a partir de suas mensagens.",
+        "value": false
+    },
+    "botName": {
+        "description": "Define o nome do BOT.",
+        "value": "Seed"
+    },
+    "codeReload": {
+        "description": "Ativa o recarregamento automático do código, eliminando a necessidade de reinicializações, mas pode causar bugs.",
+        "value": true
+    },
+    "colorSet": {
+        "description": "Define as paletas de cores usadas para imprimir mensagens e comandos no terminal. Configurar na seguinte ordem: [Texto Normal, Visualização do Corpo, Data, Grupos e Números, Comando]. Use nomes de cores em inglês e evite complexidade.",
+        "value": ["brightBlue", "brightYellow", "brightRed", "brightGreen", "brightMagenta", "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white", "gray", "grey", "brightCyan", "brightWhite"]
+    },
+    "commandsCooldown": {
+        "description": "Define o tempo de espera em milissegundos para uso de comandos. Deve estar sincronizado com 'maxCommands' para controle eficaz de anti-spam ou use os valores padrão.",
+        "value": 5000
+    },
+    "consoleType": {
+        "description": "Define quais informações são registradas na tela. Um valor de 1 imprime todas as informações, 2 apenas mensagens e 3 apenas comandos.",
+        "value": 1
+    },
+    "fixEscape": {
+        "description": "Ative isso se encontrar erros com vírgulas ou símbolos no SQLite. Note que isso removerá, e não escapará, caracteres especiais. Ainda assim, muito útil com erros de banco de dados.",
+        "value": false
+    },
+    "fullError": {
+        "description": "O método de registro de erro. Quando configurado como 'true,' imprime todas as informações, ideal para relatórios de bugs. Alternativamente, 'false' é adequado para especialistas que preferem mensagens de erro concisas e elegantes.",
+        "value": true
+    },
+    "ignoreSecurityChecks": {
+        "description": "Quando ativado, executa tarefas sem esperar que os códigos terminem (execução síncrona), o que pode levar a vulnerabilidades de segurança, atrasos e bugs, mas aumenta a velocidade dos comandos.",
+        "value": false
+    },
+    "language": {
+        "description": "Define o idioma geral do sistema e dos usuários não configurados, não que seja totalmente útil, pois isso é um projeto base.",
+        "value": "pt"
+    },
+    "listenBroadcasts": {
+        "description": "Especifica se não deve ignorar pessoas enviando status ou transmissões.",
+        "value": false
+    },
+    "listenPolls": {
+        "description": "Especifica se não deve ignorar atualizações de enquetes, como votos. Se ativado, tratará atualizações de enquetes como mensagens comuns.",
+        "value": false
+    },
+    "listenReactions": {
+        "description": "Especifica se não deve ignorar reações. Se ativado, tratará reações como mensagens comuns.",
+        "value": false
+    },
+    "maxDecryptSize": {
+        "description": "Define o tamanho máximo do sistema de descriptografia em kilobytes. Valores maiores podem congelar o código ao descriptografar arquivos grandes ou aumentar temporariamente o uso de RAM significativamente.",
+        "value": 16000
+    },
+    "minSimilarity": {
+        "description": "Corrige comandos errados com base na similaridade entre o comando errado e os disponíveis.",
+        "value": 70
+    },
+    "owner": {
+        "description": "Um array de usuários autorizados a executar qualquer comando.",
+        "value": ["MyNumber@s.whatsapp.net"]
+    },
+    "pairingCode": { 
+        "value": false, 
+        "description": "Define se a conexão deve usar código de pareamento em vez de QRCode, minimizado para ajudar na edição no Termux por sed." 
+    },
+    "prefixes": {
+        "description": "Define os prefixos reconhecidos como comandos. Não afeta comandos sem prefixo.",
+        "value": [
+            "\\",
+            "/",
+            "$",
+            "^",
+            "=",
+            "+",
+            "!",
+            "&",
+            ":",
+            ";",
+            ">",
+            "<"
+        ]
+    },
+    "reactOnWork": {
+        "description": "Define se reagirá às mensagens ao executar comandos, solicitar espera ou ao receber algum erro na execução da mensagem. NÃO ABUSE.",
+        "value": {
+            "enable": false,
+            "emojis": {
+                "DONE": "✅",
+                "WAIT": "⌛",
+                "ERROR": "❌",
+                "COOLDOWN": "🛑"
+            }
+        }
+    },
+    "readOldMessages": {
+        "description": "Indica se deve ler mensagens carregadas ao voltar online. Isso pode diminuir o desempenho geral e causar erros em mensagens de mídia, mas é útil para tarefas como ranking e nivelamento.",
+        "value": false
+    },
+    "secureGroup": {
+        "description": "Especifica um grupo seguro para receber logs em caso de falhas no sistema para enviar mensagens para a pessoa ou chat correto. Defina como 'false' para desativar.",
+        "value": false
+    },
+    "secretKey": {
+        "description": "Define a senha usada para ignorar requisitos de proprietário e administrador. Nunca use a padrão. Crie uma senha MUITO FORTE, pois isso pode ser SUPER HIPER EXTREMAMENTE PERIGOSO.",
+        "value": "IrisBOT@Root#123"
+    },
+    "sendSER": {
+        "description": "Define como as mensagens de erro serão enviadas. Se configurado como 'false', apenas informará que ocorreu um erro. Se configurado como 'true', mensagens de erro muito detalhadas serão enviadas no WhatsApp. Use estas mensagens para entrar em contato com a comunidade DEV. | Cuidado, porque: Sem log = Sem suporte.",
+        "value": true
+    },
+    "taskerEval": {
+		"description": "Define se deve avaliar códigos enviados de aplicativos como Tasker, Macrodroid ou scripts bash brutos. Atenção, esta configuração é PERIGOSA. Não a habilite se você tiver configurado um secretKey e yourName fracos.",
+		"value": false
+	},
+    "yourName": {
+        "description": "Especifica o nome do dono, necessário para execução dos plugins.",
+        "value": "User"
+    }
+}

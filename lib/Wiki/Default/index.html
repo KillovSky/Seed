@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página iframe para login do modo terminal do Projeto Íris.">
+    <meta name="keywords"
+        content="robot, bot, whatsapp, chatbot, languages, games, stickers, commands, otaku, gamer, adult, help, automate, javascript, html, shell, css, python, json, opensource, adapt, iris">
+    <meta name="author" content="KillovSky">
+    <script src="default.js"></script>
+    <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <nav id="navbar" hidden>
+            <ul class="navtop">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"><i class="fas fa-home"></i> Homepage</a>
+                </li>
+                <li>
+                    <a href="https://github.com/KillovSky/Iris">
+                        <span>
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+                        Project Íris
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/KillovSky/Iris/issues/604"><i
+                            class="fa-solid fa-handshake-angle"></i>
+                        Suporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.npmjs.com/~killovsky"><i class="fa-brands fa-npm"></i>
+                        KillovSky
+                        [NPM]</a>
+                </li>
+                <li>
+                    <a href="https://github.com/KillovSky">
+                        <span>
+                            <i class="fa-brands fa-github-alt"></i>
+                        </span>
+                        KillovSky [GitHub]
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/KillovSky#-fundings">
+                        <span>
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        </span>
+                        Donates
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/KillovSky?tab=repositories">
+                        <span>
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                        Mais projetos
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <iframe src="/login" title="Login Webpage"></iframe>
+        <a onclick="toggleNavVisibility()" class="float">
+            <i id="iconi" class="fa fa-list"></i>
+        </a>
+        <form hidden id="ipForm" method="post" action="/login">
+            <input hidden type="hidden" id="IPADDR" name="IP">
+            <input hidden type="text" name="username" placeholder="Username">
+            <input hidden type="password" name="password" id="password">
+            <button hidden type="submit" tabindex="3" class="btn">Conectar</button>
+        </form>
+    </div>
+</body>
+
+</html>
